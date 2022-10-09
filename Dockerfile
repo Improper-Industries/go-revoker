@@ -1,4 +1,4 @@
-FROM golang:1.19.0-alpine3.14
+FROM golang:alpine3.16
 
 RUN mkdir /revoker
 WORKDIR /revoker
