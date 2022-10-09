@@ -1,0 +1,20 @@
+version: "3.3"
+
+services:
+  revoker:
+    image: cosmtrek/air
+    working_dir: /go-revoker
+    ports:
+      - 8008:3005
+    environment:
+      - BLOOM_SERVER=krakend:8020
+    volumes:
+      - .:/go-revoker
+    networks:
+      submit-gateway_submit:
+        aliases:
+          - revoker
+
+networks:
+  submit-gateway_submit:
+    external: true
