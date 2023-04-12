@@ -12,7 +12,7 @@ Small Go service for revoking JWT tokens with [KrakenD](https://www.krakend.io/)
 The service requires one environment variable, `BLOOM_SERVER`, which should contain the address of your KrakenD bloom filter RPC server.
 
 ```bash
-BLOOM_SERVER=localhost:1234
+BLOOM_SERVER=localhost:1000
 ```
 
 ### Routes
